@@ -1,0 +1,329 @@
+/*videos estao separados! em css_video*/
+#NotaEq {
+    text-align: center;
+    color: #fff;
+}
+
+.top-bar {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#LogoCyberCamp {
+    cursor: pointer;
+}
+
+.darkbackground {
+    background-color: #000000;
+}
+
+.custom-dropdown {
+    background-image: url("../images/perfil.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 20px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.custom-dropdown2 {
+    background-image: url("../images/Config.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 20px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.custom-dropdown3 {
+    background-image: url("../images/criar.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 20px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.custom-dropdown4 {
+    background-image: url("../images/mensagens.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 20px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.custom-dropdown5 {
+    background-image: url("../images/perfil.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.custom-dropdown6 {
+    background-image: url("../images/Config.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.custom-dropdown7 {
+    background-image: url("../images/criar.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.custom-dropdown8 {
+    background-image: url("../images/mensagens.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.logo {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 150px;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 14px;
+
+
+}
+
+.custom-dropdown,
+.custom-dropdown2,
+.custom-dropdown3,
+.custom-dropdown4 {
+    margin-right: 20px;
+}
+
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-thumbnail {
+    margin: 10px;
+    cursor: pointer;
+    max-width: 300px;
+    /* Adjust the size as needed */
+}
+
+/*testando */
+@media (max-width: 768px) {
+    .MobilemenuHide {
+        display: none;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-group {
+        flex: 1;
+    }
+
+    .form-control {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        margin-left: 10px;
+    }
+
+    .custom-dropdown,
+    .custom-dropdown2,
+    .custom-dropdown3,
+    .custom-dropdown4 {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+
+    .custom-dropdown5,
+    .custom-dropdown6,
+    .custom-dropdown7,
+    .custom-dropdown8 {
+        display: none;
+    }
+
+    .btn-primary {
+        display: block;
+    }
+}
+
+.video-container {
+    z-index: 3;
+    position: relative;
+    top: 30;
+    left: 50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-thumbnail {
+
+    margin: 20px;
+    cursor: pointer;
+    width: 100%;
+
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.video-thumbnail img {
+    max-width: 100%;
+}
+
+.video-info {
+
+    margin-top: 5px;
+    text-align: left;
+}
+
+.video-info h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.video-info p {
+    margin: 0;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+body {
+    background: linear-gradient(to bottom, #000066, #000000);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .video-thumbnail {
+        width: 91%;
+        height: auto;
+        margin: 20px;
+        cursor: pointer;
+        max-width: 400%;
+        text-align: center;
+
+
+    }
+
+    .video-thumbnail img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .video-overlay {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        top: 0;
+        left: 0;
+
+    }
+
+    .video-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: large;
+        text-align: center;
+    }
+
+    .video-info h3 {
+        font-size: 200%;
+    }
+
+    .video-info p {
+        font-size: 100%;
+    }
+
+    /* Estilo da sidebar  e testandp */
+
+
+    #video-container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .list-group-item {
+        margin-top: 25px;
+        /* Adjust the margin-top to move "Item" down */
+    }
+}
+
+/*lembrar de tirar esses comentarios e mover o css para um aquivo separado e o javascript tambem*/
+
+.modal {
+    width: 300px;
+}
+
+.modal-content {
+    width: 300px;
+}
+
+.list-group-item:hover {
+    background-color: rgb(134, 134, 134) !important;
+    color: #000;
+}
+
+.list-group-item {
+    background-color: rgb(0, 0, 0) !important;
+    color: #ffffff;
+}
